@@ -11,6 +11,7 @@
 
     <name>REST/Protobuf</name>
     <description>Small demonstration of REST service and clients using Protocol Buffers for transport</description>
+    <url>https://osframework.github.io/rest-protobuf/</url>
     <inceptionYear>2016</inceptionYear>
 
     <organization>
@@ -21,7 +22,7 @@
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
 
@@ -53,6 +54,7 @@
         <!-- Plugin versions (alphabetical order) -->
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>2.19.1</maven-failsafe-plugin.version>
+        <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
         <maven-site-plugin.version>3.5.1</maven-site-plugin.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <site-maven-plugin.version>0.12</site-maven-plugin.version>
@@ -80,6 +82,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>${maven-site-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-reports-plugin.version}</version>
                 </plugin>
                 <!-- See: https://github.github.com/maven-plugins/site-plugin/ -->
                 <plugin>
