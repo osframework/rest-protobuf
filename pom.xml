@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.osframework.rest</groupId>
+    <artifactId>rest-protobuf</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>REST/Protobuf</name>
+    <description>Small demonstration of REST service and clients using Protocol Buffers for transport</description>
+    <inceptionYear>2016</inceptionYear>
+
+    <organization>
+        <name>OSFramework Project</name>
+        <url>http://osframework.org/</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/osframework/rest-protobuf</url>
+        <connection>scm:git:https://github.com/osframework/rest-protobuf.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:osframework/rest-protobuf.git</developerConnection>
+    </scm>
+    <!-- <ciManagement></ciManagement> -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/osframework/rest-protobuf/issues</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.javaVersion>1.8</project.build.javaVersion>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Dependency versions (alphabetical order) -->
+
+        <!-- Plugin versions (alphabetical order) -->
+    </properties>
+
+</project>
