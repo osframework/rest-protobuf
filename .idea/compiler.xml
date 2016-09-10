@@ -19,7 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rest-protobuf" target="1.5" />
+      <module name="rest-protobuf" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
