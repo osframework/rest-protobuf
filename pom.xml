@@ -23,6 +23,7 @@
         <license>
             <name>Apache License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
         </license>
     </licenses>
 
@@ -53,6 +54,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Dependency versions (alphabetical order) -->
+        <logback.version>[1.1.7, 1.2.0)</logback.version>
+        <slf4j.version>[1.7.21, 1.8.0)</slf4j.version>
+        <testng.version>[6.9.10, 7.0.0)</testng.version>
 
         <!-- Plugin versions (alphabetical order) -->
         <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
@@ -64,6 +68,34 @@
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <site-maven-plugin.version>0.12</site-maven-plugin.version>
     </properties>
+
+    <modules>
+        <module>model</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Logging dependencies -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- Test dependencies -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>
